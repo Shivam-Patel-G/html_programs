@@ -1,39 +1,51 @@
 <html>
-  <body bgcolor="yellow">
-    <center>
-      <h2>Student Bio-Data Form</h2>
-    </center>
+
+<body bgcolor="grey">
+  <center>
+    <h2>Student Bio-Data Form</h2>
+  </center>
+  <br>
+  <form>
+    <label for="studentName">Student Name</label>
+    <input type="text" name="t1">
     <br>
-    <form>
-      <label for="studentName">Student Name</label>
-      <input type="text" name="t1">
-      <br>
-      <label for="password">password</label>
-      <input type="password" name="t2" id="">
-      <br>
-      <h3>Gender</h3>
-      <input type="radio" name="r1" id="">
-      <label for="Male">Male</label>
-      <br>
-      <input type="radio" name="r1" value="Female" id="">
-      <label for="Female">Female</label>
-      <br>
-      <label for="StudentDOB">StudentDOB</label>
-      <input type="date" name="StudentDOB" id="">
-      <br>
-      <h3>Select course</h3>
-      <input type="checkbox" name="" id="">CSE</input>
-      <input type="checkbox" name="" id="">EEE</input>
-      <input type="checkbox" name="" id="">Civil</input>
-      <br>
-      <h3>Year of the Course</h3>
-      <select name="Year" id="">
+    <label for="password">password</label>
+    <input type="password" name="t2" id="">
+    <br>
+    <h3>Gender</h3>
+    <input type="radio" name="r1" id="">
+    <label for="Male">Male</label>
+    <br>
+    <input type="radio" name="r1" value="Female" id="">
+    <label for="Female">Female</label>
+    <br>
+    <label for="StudentDOB">StudentDOB</label>
+    <input type="date" name="StudentDOB" id="">
+    <br>
+    <h3>Select course</h3>
+    <input type="checkbox" name="" id="">CSE</input>
+    <input type="checkbox" name="" id="">EEE</input>
+    <input type="checkbox" name="" id="">Civil</input>
+    <br>
+    <h3>Year of the Course</h3>
+    <select name="Year" id="">
       <option value="1">1st</option>
       <option value="1">2nd</option>
       <option value="1">3rd</option>
       <option value="1">4th</option>
-      </select>
-        
-    </form>
-  </body>
+    </select>
+    <br>
+    <label for="StudentEmail">Student Email</label>
+    <input type="email" name="StudentEmail" id="">
+    <br>
+    <label for="StudentAddress">Student Address</label>
+    <textarea name="StudentAddress"  cols="20" rows="5"></textarea>
+    <br><br><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="reset">
+    <button type="submit"> Click here to Submit</button>
+
+  </form>
+</body>
+
 </html>
