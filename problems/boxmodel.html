@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model</title>
+  <style>
+    body{
+      background-color: black;
+      font-family: monospace;
+    }
+    .outer{
+      height: 300px;
+      width: 300px;
+      background-color: blue;
+      color: beige;
+    }
+    .inner{
+      height: 100px;
+      width: 100px;
+      background-color: crimson;
+      position: absolute;
+      top: 30px;
+      left: 150px;
+      color: beige;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">this is outer element
+    <div class="inner">this is inner element</div>
+  </div>
+
+</body>
+</html>
