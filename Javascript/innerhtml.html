@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inner Html</title>
+  <script>
+
+    function change (){
+      document.getElementById("h1tag").innerHTML = "h1 tag got changed"
+      document.getElementById("h2tag").innerHTML = " its id is 2"
+    }
+  </script>
+</head>
+<body>
+  <h1 id="h1tag">this is a h1 tag which will be changed by innerhtml</h1>
+  <h2 id="h2tag">this is a h2 tag</h2>
+  <button type="submit" onclick="change()"> change please</button>
+</body>
+</html>
