@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <style>
+    div{
+      font-size: 100px;
+    }
+  </style>
+  <script>
+    function validate(){
+      var UserName = document.myform.username.value
+      var Password = document.myform.password.value
+      // document.write(UserName)
+      // document.write("<br>"+Password)
+      if(UserName==="" || Password===""){
+        window.alert("please enter")
+      }
+      else if(Password.length<8){
+        window.alert("small Password min  8")
+      }
+      else if(UserName==="Shivam" && Password==="12345678"){
+        document.write("<div style=\"background-color: green; height: 100vh; width: 100vw;\"> login Successfull </div> ")
+      }
+      else{
+        document.write("<div style=\"background-color: red; height: 100vh; width: 100vw;\"> Intruder </div> ")
+      }
+    }
+  </script>
+</head>
+<body>
+  <form name="myform" method="post" onsubmit="validate()">
+    UserName: <input type="text" name="username" id="">
+    Password: <input type="password" name="password" id="">
+    <input type="submit" value="submit">
+    
+  </form>
+</body>
+</html>
