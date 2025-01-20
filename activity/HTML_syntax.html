@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Syntax Demonstration</title>
+</head>
+<body>
+    <h1>JavaScript Syntax Demonstration</h1>
+    <div id="output"></div> <!-- Placeholder for document output -->
+
+    <script>
+        // Single-line comment: Declaring variables with different data types
+
+        let userName = "Shivam"; // String variable
+        let userAge = 20; // Number variable
+        let isDeveloper = true; // Boolean variable
+        let hobbies = ["Coding", "Reading", "Gaming"]; // Array variable
+        let userDetails = { city: "Mumbai", country: "India" }; // Object variable
+
+        /* 
+         Multi-line comment: 
+         - Use console.log() for debugging or console output
+         - Use DOM manipulation for displaying content on the webpage
+        */
+
+        // Output variables to the console
+        console.log("User Name:", userName);
+        console.log("User Age:", userAge);
+        console.log("Is Developer:", isDeveloper);
+        console.log("Hobbies:", hobbies);
+        console.log("User Details:", userDetails);
+
+        // Output variables to the webpage
+        document.getElementById("output").innerHTML = `
+            <p><strong>Name:</strong> ${userName}</p>
+            <p><strong>Age:</strong> ${userAge}</p>
+            <p><strong>Is Developer:</strong> ${isDeveloper}</p>
+            <p><strong>Hobbies:</strong> ${hobbies.join(", ")}</p>
+            <p><strong>Address:</strong> ${userDetails.city}, ${userDetails.country}</p>
+        `;
+    </script>
+</body>
+</html>

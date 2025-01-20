@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Operators Demonstration</title>
+</head>
+<body>
+    <h1>JavaScript Operators Demonstration</h1>
+    <div id="output"></div> <!-- Placeholder for results -->
+
+    <script>
+        // Initialize variables for demonstration
+        let a = 10, b = 3, c;
+
+        // Arithmetic Operations
+        let addition = a + b;
+        let subtraction = a - b;
+        let multiplication = a * b;
+        let division = a / b;
+        let modulus = a % b;
+        let exponent = a ** b;
+
+        // Comparison Operations
+        let equalTo = (a == b);
+        let notEqualTo = (a != b);
+        let strictEqualTo = (a === b);
+        let strictNotEqualTo = (a !== b);
+
+        // Logical Operations
+        let andOperation = (a > 5 && b < 5);
+        let orOperation = (a > 5 || b > 5);
+        let notOperation = !(a > b);
+
+        // Assignment Operations
+        c = 5;
+        c += a; // c = c + a
+        let addAssign = c;
+        c -= b; // c = c - b
+        let subtractAssign = c;
+
+        // Ternary Operator
+        let isEven = (a % 2 === 0) ? "Even" : "Odd";
+
+        // Bitwise Operations
+        let bitwiseAnd = a & b;
+        let bitwiseOr = a | b;
+        let bitwiseXor = a ^ b;
+        let bitwiseNot = ~a;
+
+        // Display results
+        let outputDiv = document.getElementById("output");
+        outputDiv.innerHTML = `
+            <h2>Arithmetic Operations</h2>
+            <p>Addition: ${addition}</p>
+            <p>Subtraction: ${subtraction}</p>
+            <p>Multiplication: ${multiplication}</p>
+            <p>Division: ${division}</p>
+            <p>Modulus: ${modulus}</p>
+            <p>Exponent: ${exponent}</p>
+
+            <h2>Comparison Operations</h2>
+            <p>Equal To (a == b): ${equalTo}</p>
+            <p>Not Equal To (a != b): ${notEqualTo}</p>
+            <p>Strict Equal To (a === b): ${strictEqualTo}</p>
+            <p>Strict Not Equal To (a !== b): ${strictNotEqualTo}</p>
+
+            <h2>Logical Operations</h2>
+            <p>AND (a > 5 && b < 5): ${andOperation}</p>
+            <p>OR (a > 5 || b > 5): ${orOperation}</p>
+            <p>NOT !(a > b): ${notOperation}</p>
+
+            <h2>Assignment Operations</h2>
+            <p>Add and Assign (c += a): ${addAssign}</p>
+            <p>Subtract and Assign (c -= b): ${subtractAssign}</p>
+
+            <h2>Ternary Operator</h2>
+            <p>a is ${isEven}</p>
+
+            <h2>Bitwise Operations</h2>
+            <p>Bitwise AND (a & b): ${bitwiseAnd}</p>
+            <p>Bitwise OR (a | b): ${bitwiseOr}</p>
+            <p>Bitwise XOR (a ^ b): ${bitwiseXor}</p>
+            <p>Bitwise NOT (~a): ${bitwiseNot}</p>
+        `;
+    </script>
+</body>
+</html>

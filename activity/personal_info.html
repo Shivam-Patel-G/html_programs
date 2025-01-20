@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information Form</title>
+</head>
+<body>
+    <script>
+        // Step 1: Prompt the user for personal information
+        let name = prompt("Enter your name:"); // Ask for the user's name
+        let age = parseInt(prompt("Enter your age:")); // Ask for the user's age and convert it to a number
+        let favoriteColor = prompt("Enter your favorite color:"); // Ask for the user's favorite color
+        let hobbiesInput = prompt("Enter your hobbies, separated by commas:"); // Ask for hobbies, comma-separated
+
+        // Step 2: Process hobbies input into an array
+        let hobbies = hobbiesInput.split(",").map(hobby => hobby.trim()); // Split by commas and trim whitespace
+
+        // Step 3: Log all variables to the console
+        console.log("Name:", name);
+        console.log("Age:", age);
+        console.log("Favorite Color:", favoriteColor);
+        console.log("Hobbies:", hobbies);
+
+        // Step 4: Display a summary of the information on the webpage
+        document.write("<h1>Personal Information</h1>");
+        document.write(`<p><strong>Name:</strong> ${name}</p>`);
+        document.write(`<p><strong>Age:</strong> ${age}</p>`);
+        document.write(`<p><strong>Favorite Color:</strong> ${favoriteColor}</p>`);
+        document.write("<p><strong>Hobbies:</strong></p>");
+        document.write("<ul>");
+        hobbies.forEach(hobby => {
+            document.write(`<li>${hobby}</li>`); // Loop through each hobby and display it as a list item
+        });
+        document.write("</ul>");
+
+        // Step 5: Include comments explaining each part of the code
+        // prompt() is used to gather input from the user.
+        // parseInt() ensures the age input is stored as a number.
+        // split() converts the hobbies string into an array for easy manipulation.
+        // map() trims any extra spaces from each hobby.
+    </script>
+</body>
+</html>
