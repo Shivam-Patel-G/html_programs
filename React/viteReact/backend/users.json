@@ -1,0 +1,12 @@
+[
+  {
+    "user": 1001,
+    "userName": "Shivam Patel",
+    "userAddress": "Rajasthan"
+  },
+  {
+    "user": 1002,
+    "userName": "Karthikeya Thatipamula",
+    "userAddress": "Telangana" 
+  }
+]
