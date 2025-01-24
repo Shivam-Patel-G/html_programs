@@ -73,7 +73,7 @@
 // console.log(Addition(2,3));
 // console.log(Multiplication(10,20));
 
-//---------------------------------------------------------ExpressJS (GET)
+//---------------------------------------------------------ExpressJS (GET)   (npm i express)
 // const express = require('express')
 // const app = express();
 
@@ -95,22 +95,43 @@
 // })
 
 //---------------------------------------------------------ExpressJS (POST)
-const express = require("express");
-const users = require("./users.json")
-const app = express();
-const PORT = 4500;
+// const express = require("express");
+// const users = require("./users.json")
+// const app = express();
+// const PORT = 4500;
 
-app.get("/users",(req,res)=>{
-  return res.json(users)
-})
+// app.get("/users",(req,res)=>{
+//   return res.json(users)
+// })
 
-app.get("/users/:id",(req,res)=>{
-  const id=Number(req.params.id);
-  const user=users.find((user)=>user.user===id)
-  return res.json(user)
-})
+// app.get("/users/:id",(req,res)=>{
+//   const id=Number(req.params.id);
+//   const user=users.find((user)=>user.user===id)
+//   return res.json(user)
+// })
 
-app.listen(PORT,()=>{
-  console.log(`Server is running on PORT ${PORT}`)
-})
- 
+// app.listen(PORT,()=>{
+//   console.log(`Server is running on PORT ${PORT}`)
+// })
+
+//----------------------------------------------------------MongoDB  (npm i mongoose express dotenv)
+// const express = require('express');
+// const dotEnv = require('dotenv');
+// const mongoClient = require('mongoose')
+// const app = express();
+// const PORT = process.env.PORT || 5500;
+// dotEnv.config();
+
+// mongoClient.connect(process.env.MONGO_URL).then(
+//   ()=>{
+//     console.log("we connected to mongoDB atlas account")
+//   }
+// ).catch((err)=>{
+//   console.log(err)
+// })
+
+// app.listen(PORT,()=>{
+//   console.log(`Server is running at Port ${PORT}`)
+// })
+
+//----------------------------------------------------------MongoDB CRUD  (npm i mongoose express dotenv body-parser)
